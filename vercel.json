@@ -6,28 +6,23 @@
   "public": true,
   "headers": [
     {
-      "source": "/api/submit-form",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/json"
-        }
-      ]
-    },
-    {
       "source": "/sitemap.xml",
       "headers": [
         {
           "key": "Content-Type",
-          "value": "application/xml"
+          "value": "application/xml; charset=utf-8"
         }
       ]
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/((?!sitemap\\.xml).*)",
-      "destination": "/index.html"
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
