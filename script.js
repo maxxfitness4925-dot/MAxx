@@ -143,16 +143,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Join Now buttons
-    const joinBtns = document.querySelectorAll('.join-btn');
-    joinBtns.forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            const membershipName = this.closest('.membership-card').querySelector('h3').textContent;
-            alert(`You selected the ${membershipName} plan.\n\nRedirecting to membership registration...`);
-        });
-    });
-
     // Newsletter subscription
     const footerButton = document.querySelector('.footer-section:last-child button');
     if (footerButton) {
