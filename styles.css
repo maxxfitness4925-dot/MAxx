@@ -338,7 +338,23 @@ body {
 /* Mobile responsiveness for mega promo */
 @media (max-width: 768px) {
     .mega-promo {
-        min-height: 120px;
+        min-height: 110px;
+    }
+    
+    .mega-promo-content {
+        padding: 12px 15px;
+        gap: 6px;
+    }
+    
+    .mega-promo-main {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .mega-text-large {
+        font-size: 28px;
+        letter-spacing: 4px;
     }
     
     .mega-percent {
@@ -351,57 +367,80 @@ body {
     }
     
     .mega-off {
-        font-size: 40px;
-        letter-spacing: 5px;
-        margin-left: 10px;
+        font-size: 28px;
+        letter-spacing: 4px;
+        margin-left: 8px;
+    }
+    
+    .mega-promo-sub {
+        gap: 10px;
     }
     
     .mega-text {
-        font-size: 12px;
-        letter-spacing: 3px;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-align: center;
     }
     
     .mega-line {
-        width: 40px;
+        width: 30px;
+    }
+    
+    .mega-promo-badge {
+        padding: 5px 15px;
     }
     
     .badge-text {
-        font-size: 11px;
+        font-size: 10px;
         letter-spacing: 2px;
     }
     
     .mega-urgency {
-        font-size: 11px;
+        font-size: 10px;
         letter-spacing: 2px;
     }
 }
 
 @media (max-width: 480px) {
     .mega-promo {
-        min-height: 110px;
+        min-height: 100px;
     }
     
     .mega-promo-content {
+        gap: 4px;
+        padding: 10px 10px;
+    }
+    
+    .mega-promo-main {
         gap: 5px;
-        padding: 10px 15px;
+    }
+    
+    .mega-text-large {
+        font-size: 22px;
+        letter-spacing: 2px;
     }
     
     .mega-percent {
-        font-size: 55px;
+        font-size: 45px;
     }
     
     .mega-percent-sign {
-        font-size: 28px;
+        font-size: 24px;
     }
     
     .mega-off {
-        font-size: 32px;
-        letter-spacing: 3px;
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin-left: 5px;
+    }
+    
+    .mega-promo-sub {
+        gap: 8px;
     }
     
     .mega-text {
-        font-size: 10px;
-        letter-spacing: 2px;
+        font-size: 9px;
+        letter-spacing: 1px;
     }
     
     .mega-line {
@@ -409,11 +448,17 @@ body {
     }
     
     .mega-promo-badge {
-        padding: 4px 15px;
+        padding: 4px 12px;
     }
     
     .badge-text {
-        font-size: 10px;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+    
+    .mega-urgency {
+        font-size: 9px;
+        letter-spacing: 1px;
     }
 }
 
