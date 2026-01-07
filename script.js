@@ -153,14 +153,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // CTA Button - Redirect to WhatsApp
-    const ctaBtn = document.querySelector('.cta-btn');
-    if (ctaBtn) {
-        ctaBtn.addEventListener('click', function(e) {
-            window.open('https://wa.me/919482507769?text=Hi!%20I\'m%20interested%20in%20joining%20Maxx%20Fitness.%20Please%20share%20more%20details!', '_blank');
-        });
-    }
-
     // Newsletter subscription
     const footerButton = document.querySelector('.footer-section:last-child button');
     if (footerButton) {
