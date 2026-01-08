@@ -1,3 +1,4 @@
+// Updated: January 8, 2026 - Force redeploy
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
